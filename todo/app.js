@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const form = document.getElementById("taskForm");
   const taskList = document.getElementById("taskList");
 
+  let m = "hello world";
+
   // listen for form submission
   form.addEventListener("submit", handleFormSubmission);
 
