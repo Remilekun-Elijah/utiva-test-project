@@ -1,0 +1,26 @@
+#taskList {
+  border: 2px solid gray;
+  padding: 5px 2px
+}
+
+#taskList li {
+  list-style-type: none;
+  padding: 5px 3px;
+  border-bottom: 1px solid gray;
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#taskList li i {
+  cursor: pointer;
+}
+
+#taskList li i:nth-child(even) {
+  color: red;
+}
+
+#taskList li i:nth-child(odd) {
+  color: blue;
+}

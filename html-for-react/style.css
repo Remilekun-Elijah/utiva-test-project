@@ -1,0 +1,68 @@
+
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.servicesTitle {
+  text-align: center;
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 70px;
+  flex-wrap: wrap;
+}
+
+.servicesContainer h3 {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 5px 5px 40px 3px gray;
+  position: relative;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.card button {
+  padding: 5px 10px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card .newProduct {
+  position: absolute;
+  font-size: 18px;
+  right: 0;
+  top: 0;
+  background-color: tomato;
+  color: white;
+  padding: 5px 10px;
+
+}
+
+/* TODO = Next class - week 6 - Tools of the Business-API and JSON */

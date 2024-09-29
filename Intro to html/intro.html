@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./asset/style.css" type="text/css" rel="stylesheet" />
+
+  <meta name="description" content="This is a sample website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <strong class="first_strong"> Bold text</strong>
+  <p> Paragraph text</p>
+
+  <h1 id="headingOne" class="firstHeadingOne">
+    Heading One
+  </h1>
+
+
+  <h1 id="secondHeadingOne">
+    Second Heading One
+  </h1>
+  <h2>Heading two</h2>
+  <h3>Heading three</h3>
+  <h4>Heading four</h4>
+  <h5>Heading five</h5>
+  <h6>Heading six</h6>
+
+  <a href="./index.html"> Navigate home</a>
+  <a href="./store/store.html"> Go to store</a>
+
+  <div class="flexContainer">
+
+    <form action="" class='form' id="signupForm">
+
+      <h3>Sign up</h3>
+      <p>Fill the form to register</p>
+
+      <input type="text" placeholder="Enter your Name">
+      <input type="tel" placeholder="Enter your Phone Number">
+
+      <textarea name="" id="" placeholder="Enter your Message"></textarea>
+
+      <button type="submit"> Submit </button>
+    </form>
+
+
+
+    <form action="" class='form' id="signupForm">
+
+      <h3>Sign in</h3>
+      <p>Fill the form to login</p>
+
+      <input type="email" placeholder="Enter your Email">
+
+      <input type="password" placeholder="Enter your Password">
+
+      <button type="submit"> Submit </button>
+    </form>
+
+    <h3>Welcome Home</h3>
+
+  </div>
+
+  <section>
+    <h2 class="text-center">Services</h2>
+
+    <div class="servicesContainer">
+
+      <div>
+        <h3>Cheap and affordable</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div>
+        <h3>Excellent Customer service</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div>
+        <h3>Environment friendly</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <br />
+  <br />
+
+  <section class="productSection">
+
+    <h2 class="text-center"> Our Product</h2>
+
+    <div class="servicesContainer">
+
+      <!-- FIRST PRODUCT -->
+      <div class="card firstProduct">
+        <div class="newProduct"> New </div>
+
+        <img src="./images/adidas.jpg" alt="" style="width: 300px; height: 200px;">
+
+        <div class="flex gap-20 justify-center">
+          <h3>Adidas Sneaker </h3>
+          <h3>40,000</h3>
+        </div>
+
+        <div class="flex justify-center">
+          <button id="">Add to cart</button>
+        </div>
+      </div>
+      <!-- FIRST PRODUCT [!END] -->
+
+
+      <div class="card">
+
+        <img src="./images/adidas.jpg" alt="" style="width: 300px; height: 200px;">
+
+        <div class="flex gap-20 justify-center">
+          <h3>Adidas Sneaker </h3>
+          <h3>40,000</h3>
+        </div>
+        <div class="flex justify-center">
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+
+
+        <img src="./images/adidas.jpg" alt="" style="width: 300px; height: 200px;">
+
+        <div class="flex gap-20 justify-center">
+          <h3>Adidas Sneaker </h3>
+          <h3>40,000</h3>
+        </div>
+        <div class="flex justify-center">
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <br />
+  <br />
+  <br />
+  <br />
+</body>
+
+ 
+<script>
+  // alert("Hello world")
+
+  // console.log(document.getElementById("headingOne"));
+  const fpCard = document.querySelector(".firstProduct")
+  const btn = fpCard.children[3].firstElementChild;
+
+  btn.addEventListener("click", function (event) { 
+    alert("Product added to cart successfully")
+    // event.target.innerText = "In Cart"
+    event.target.textContent = "In Cart"
+    event.target.disabled = true;
+
+    event.target.id = "eshship";
+
+    event.target.style.backgroundColor = "red";
+    event.target.style.color = "white";
+  })
+</script>
+
+</html>

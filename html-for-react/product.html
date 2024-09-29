@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+
+
+  <style>
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar .logo {
+      font-size: 30px;
+    }
+
+    nav {
+      background-color: #eee;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .navbar .nav-menu ul {
+      list-style-type: none;
+      display: flex;
+      gap: 10px
+    }
+
+    .navbar .nav-menu a {
+      color: #333;
+      text-decoration: none;
+      font-size: 25px;
+    }
+
+    .navbar .nav-menu a:hover {
+      color: red
+    }
+
+    .product-section {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="/home.html">
+      <h1 class="logo">Logo</h1>
+    </a>
+
+
+  </nav>
+
+  <section class="product-section">
+
+    <div class="servicesContainer">
+
+      <!-- FIRST PRODUCT -->
+      <div class="card firstProduct">
+        <div class="newProduct"> New </div>
+
+        <img src="./images/adidas.jpg" alt="" style="width: 300px; height: 200px;">
+
+        <div class="flex gap-20 justify-center">
+          <h3>Adidas Sneaker </h3>
+          <h3>40,000</h3>
+        </div>
+
+        <div class="flex justify-center">
+          <button id="">Add to cart</button>
+        </div>
+      </div>
+      <!-- FIRST PRODUCT [!END] -->
+
+
+      <div class="card">
+
+        <img src="./images/adidas.jpg" alt="" style="width: 300px; height: 200px;">
+
+        <div class="flex gap-20 justify-center">
+          <h3>Adidas Sneaker </h3>
+          <h3>40,000</h3>
+        </div>
+        <div class="flex justify-center">
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+
+
+        <img src="./images/adidas.jpg" alt="" style="width: 300px; height: 200px;">
+
+        <div class="flex gap-20 justify-center">
+          <h3>Adidas Sneaker </h3>
+          <h3>40,000</h3>
+        </div>
+        <div class="flex justify-center">
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script>
+    // alert("Hello world")
+
+    // console.log(document.getElementById("headingOne"));
+    const fpCard = document.querySelector(".firstProduct")
+    const btn = fpCard.children[3].firstElementChild;
+
+    btn.addEventListener("click", function (event) {
+      alert("Product added to cart successfully")
+      // event.target.innerText = "In Cart"
+      event.target.textContent = "In Cart"
+      event.target.disabled = true;
+
+      event.target.id = "eshship";
+
+      event.target.style.backgroundColor = "red";
+      event.target.style.color = "white";
+    })
+  </script>
+</body>
+
+</html>
